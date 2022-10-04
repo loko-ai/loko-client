@@ -9,5 +9,5 @@ class OrchestratorClient(ABC):
         An abstract base orchestrator client
     """
 
-    def __init__(self):
-        self.u = URLRequest(GATEWAY).orchestrator
+    def __init__(self, gateway=GATEWAY):
+        self.u = URLRequest(gateway).orchestrator
