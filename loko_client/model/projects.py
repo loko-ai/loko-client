@@ -80,7 +80,8 @@ class Project:
                 :py:meth:`~loko_client.model.projects.Nodes` and
                 :py:meth:`~loko_client.model.projects.Edges` information.
             """
-    def __init__(self, name, id, description, created_on, last_modify, graphs, open, active, version, deployed):
+    def __init__(self, name, id, description, created_on, last_modify, graphs, open, active, version, deployed=None,
+                 **kwargs):
         self.name = name
         self.id = id
         self.description = description
